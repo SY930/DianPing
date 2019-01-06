@@ -31,9 +31,7 @@ module.exports = {
         ]
     },
 
-    eslint: {
-        configFile: '.eslintrc' // Rules for eslint
-    },
+
 
     postcss: [
         require('autoprefixer') //调用autoprefixer插件，例如 display: flex
@@ -47,6 +45,7 @@ module.exports = {
 
         // 热加载插件
         new webpack.HotModuleReplacementPlugin(),
+
 
         // 打开浏览器
         new OpenBrowserPlugin({
