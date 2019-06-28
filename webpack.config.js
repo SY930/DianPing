@@ -18,10 +18,6 @@ module.exports = {
     },
 
     module: {
-        // preLoaders: [
-        //     // 报错 ？？？？？
-        //     {test: /\.(js|jsx)$/, loader: "eslint-loader", exclude: /node_modules/}
-        // ],
         loaders: [
             { test: /\.(js|jsx)$/, exclude: /node_modules/, loader: 'babel' },
             { test: /\.less$/, exclude: /node_modules/, loader: 'style!css!postcss!less' },
